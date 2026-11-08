@@ -72,10 +72,10 @@ else:
         title=chart_title,
     )
 
-st.plotly_chart(figure, use_container_width=True)
+st.plotly_chart(figure, width="stretch")
 
 st.subheader("Your data")
-st.dataframe(data, use_container_width=True, hide_index=True)
+st.dataframe(data, width="stretch", hide_index=True)
 
 total_hours = sum(values)
 average_hours = total_hours / len(values)
